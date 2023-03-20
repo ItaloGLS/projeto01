@@ -5,6 +5,10 @@
     
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*Dark bonito: rgb(29, 24, 24)*/
 
 body {
