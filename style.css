@@ -31,7 +31,7 @@ body {
 }
 
 header {
-    height: 90vh;
+    height: 95vh;
     background: rgb(2,0,36);
     background: linear-gradient(117deg, rgba(2,0,36,1) 0%, rgba(85,136,228,1) 0%, rgba(134,206,255,1) 100%);
     margin-bottom: 50px;
@@ -197,8 +197,31 @@ header {
 
 #img-headline img {
     width: 600px;
+    animation: move 2s ease-in-out infinite;
 }
+@keyframes move {
+    0% {
+      transform: translateY(5%);
+    }
+    50% {
+      transform: translate(-1%, 7%);
+    }
+    100% {
+      transform: translateY(5%);
+    }
+  }
 
+  .animar {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all .9s ease-in-out;
+  }
+  
+  .animar.animar-ativo {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
 
 /*===================SECTION 2==================*/
 
